@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD77431E18719E54003A13C4 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = AD77431D18719E54003A13C4 /* 11.png */; };
+		AD7743201871A051003A13C4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD77431F1871A051003A13C4 /* Accelerate.framework */; };
+		AD7743221871A059003A13C4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7743211871A059003A13C4 /* OpenGLES.framework */; };
+		AD7743241871A063003A13C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7743231871A063003A13C4 /* SystemConfiguration.framework */; };
+		AD7743261871A06D003A13C4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7743251871A06D003A13C4 /* MobileCoreServices.framework */; };
+		AD7743281871A074003A13C4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7743271871A074003A13C4 /* libz.dylib */; };
+		AD77432A1871A080003A13C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7743291871A080003A13C4 /* QuartzCore.framework */; };
+		AD77432C1871A089003A13C4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD77432B1871A089003A13C4 /* AudioToolbox.framework */; };
+		AD77432E1871A091003A13C4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD77432D1871A091003A13C4 /* AVFoundation.framework */; };
+		AD7743421871A0DB003A13C4 /* bb_freq_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD7743301871A0DB003A13C4 /* bb_freq_util.cpp */; };
+		AD7743431871A0DB003A13C4 /* queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD7743341871A0DB003A13C4 /* queue.cpp */; };
+		AD7743441871A0DB003A13C4 /* rscode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD7743371871A0DB003A13C4 /* rscode.cpp */; };
+		AD7743451871A0DB003A13C4 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD77433B1871A0DB003A13C4 /* CADebugMacros.cpp */; };
+		AD7743461871A0DB003A13C4 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD77433E1871A0DB003A13C4 /* CAStreamBasicDescription.cpp */; };
+		AD7743471871A0DB003A13C4 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD7743401871A0DB003A13C4 /* CAXException.cpp */; };
+		AD7743511871A165003A13C4 /* aurio_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD7743491871A165003A13C4 /* aurio_helper.cpp */; };
+		AD7743521871A165003A13C4 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77434C1871A165003A13C4 /* EAGLView.m */; };
+		AD7743531871A165003A13C4 /* FFTBufferManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD77434D1871A165003A13C4 /* FFTBufferManager.cpp */; };
+		AD7743541871A165003A13C4 /* WaveListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD7743501871A165003A13C4 /* WaveListener.mm */; };
+		AD7743581871A16F003A13C4 /* success_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = AD7743551871A16F003A13C4 /* success_1.wav */; };
+		AD7743591871A16F003A13C4 /* top_gb.png in Resources */ = {isa = PBXBuildFile; fileRef = AD7743561871A16F003A13C4 /* top_gb.png */; };
+		AD77435A1871A16F003A13C4 /* top_gb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD7743571871A16F003A13C4 /* top_gb@2x.png */; };
+		ADD7C8EF18719A3100400EC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C8EE18719A3100400EC8 /* Foundation.framework */; };
+		ADD7C8F118719A3100400EC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C8F018719A3100400EC8 /* CoreGraphics.framework */; };
+		ADD7C8F318719A3100400EC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C8F218719A3100400EC8 /* UIKit.framework */; };
+		ADD7C8F918719A3100400EC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C8F718719A3100400EC8 /* InfoPlist.strings */; };
+		ADD7C8FB18719A3100400EC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD7C8FA18719A3100400EC8 /* main.m */; };
+		ADD7C8FF18719A3100400EC8 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADD7C8FE18719A3100400EC8 /* AppDelegate.mm */; };
+		ADD7C90118719A3100400EC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C90018719A3100400EC8 /* Images.xcassets */; };
+		ADD7C90818719A3100400EC8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C90718719A3100400EC8 /* XCTest.framework */; };
+		ADD7C90918719A3100400EC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C8EE18719A3100400EC8 /* Foundation.framework */; };
+		ADD7C90A18719A3100400EC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C8F218719A3100400EC8 /* UIKit.framework */; };
+		ADD7C91218719A3100400EC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C91018719A3100400EC8 /* InfoPlist.strings */; };
+		ADD7C91418719A3100400EC8 /* WaveLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD7C91318719A3100400EC8 /* WaveLocationTests.m */; };
+		ADD7C93A18719C5700400EC8 /* callout_anchor.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C91E18719C5700400EC8 /* callout_anchor.png */; };
+		ADD7C93B18719C5700400EC8 /* callout_anchor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C91F18719C5700400EC8 /* callout_anchor@2x.png */; };
+		ADD7C93C18719C5700400EC8 /* callout_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C92018719C5700400EC8 /* callout_bg.png */; };
+		ADD7C93D18719C5700400EC8 /* callout_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C92118719C5700400EC8 /* callout_bg@2x.png */; };
+		ADD7C93E18719C5700400EC8 /* callout_left.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C92218719C5700400EC8 /* callout_left.png */; };
+		ADD7C93F18719C5700400EC8 /* callout_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C92318719C5700400EC8 /* callout_left@2x.png */; };
+		ADD7C94018719C5700400EC8 /* callout_right.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C92418719C5700400EC8 /* callout_right.png */; };
+		ADD7C94118719C5700400EC8 /* callout_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C92518719C5700400EC8 /* callout_right@2x.png */; };
+		ADD7C94218719C5700400EC8 /* NAAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD7C92718719C5700400EC8 /* NAAnnotation.m */; };
+		ADD7C94318719C5700400EC8 /* NACallOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD7C92918719C5700400EC8 /* NACallOutView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		ADD7C94418719C5700400EC8 /* NAMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD7C92B18719C5700400EC8 /* NAMapView.m */; };
+		ADD7C94518719C5700400EC8 /* NAPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD7C92D18719C5700400EC8 /* NAPinAnnotationView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		ADD7C94618719C5700400EC8 /* pinGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C92E18719C5700400EC8 /* pinGreen.png */; };
+		ADD7C94718719C5700400EC8 /* pinGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C92F18719C5700400EC8 /* pinGreen@2x.png */; };
+		ADD7C94818719C5700400EC8 /* pinGreenFloating.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93018719C5700400EC8 /* pinGreenFloating.png */; };
+		ADD7C94918719C5700400EC8 /* pinGreenFloating@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93118719C5700400EC8 /* pinGreenFloating@2x.png */; };
+		ADD7C94A18719C5700400EC8 /* pinPurple.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93218719C5700400EC8 /* pinPurple.png */; };
+		ADD7C94B18719C5700400EC8 /* pinPurple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93318719C5700400EC8 /* pinPurple@2x.png */; };
+		ADD7C94C18719C5700400EC8 /* pinPurpleFloating.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93418719C5700400EC8 /* pinPurpleFloating.png */; };
+		ADD7C94D18719C5700400EC8 /* pinPurpleFloating@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93518719C5700400EC8 /* pinPurpleFloating@2x.png */; };
+		ADD7C94E18719C5700400EC8 /* pinRed.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93618719C5700400EC8 /* pinRed.png */; };
+		ADD7C94F18719C5700400EC8 /* pinRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93718719C5700400EC8 /* pinRed@2x.png */; };
+		ADD7C95018719C5700400EC8 /* pinRedFloating.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93818719C5700400EC8 /* pinRedFloating.png */; };
+		ADD7C95118719C5700400EC8 /* pinRedFloating@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93918719C5700400EC8 /* pinRedFloating@2x.png */; };
+		ADD7C95418719CAA00400EC8 /* MapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADD7C95318719CAA00400EC8 /* MapViewController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADD7C90B18719A3100400EC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADD7C8E318719A3100400EC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADD7C8EA18719A3100400EC8;
+			remoteInfo = WaveLocation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD77431D18719E54003A13C4 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		AD77431F1871A051003A13C4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		AD7743211871A059003A13C4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		AD7743231871A063003A13C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AD7743251871A06D003A13C4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AD7743271871A074003A13C4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AD7743291871A080003A13C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AD77432B1871A089003A13C4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AD77432D1871A091003A13C4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AD7743301871A0DB003A13C4 /* bb_freq_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bb_freq_util.cpp; sourceTree = "<group>"; };
+		AD7743311871A0DB003A13C4 /* bb_freq_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bb_freq_util.h; sourceTree = "<group>"; };
+		AD7743321871A0DB003A13C4 /* bb_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bb_header.h; sourceTree = "<group>"; };
+		AD7743341871A0DB003A13C4 /* queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = queue.cpp; sourceTree = "<group>"; };
+		AD7743351871A0DB003A13C4 /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		AD7743371871A0DB003A13C4 /* rscode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rscode.cpp; sourceTree = "<group>"; };
+		AD7743381871A0DB003A13C4 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		AD77433A1871A0DB003A13C4 /* CABitOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABitOperations.h; sourceTree = "<group>"; };
+		AD77433B1871A0DB003A13C4 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		AD77433C1871A0DB003A13C4 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		AD77433D1871A0DB003A13C4 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		AD77433E1871A0DB003A13C4 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		AD77433F1871A0DB003A13C4 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		AD7743401871A0DB003A13C4 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		AD7743411871A0DB003A13C4 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		AD7743491871A165003A13C4 /* aurio_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aurio_helper.cpp; sourceTree = "<group>"; };
+		AD77434A1871A165003A13C4 /* aurio_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aurio_helper.h; sourceTree = "<group>"; };
+		AD77434B1871A165003A13C4 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		AD77434C1871A165003A13C4 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		AD77434D1871A165003A13C4 /* FFTBufferManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFTBufferManager.cpp; sourceTree = "<group>"; };
+		AD77434E1871A165003A13C4 /* FFTBufferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTBufferManager.h; sourceTree = "<group>"; };
+		AD77434F1871A165003A13C4 /* WaveListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveListener.h; sourceTree = "<group>"; };
+		AD7743501871A165003A13C4 /* WaveListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WaveListener.mm; sourceTree = "<group>"; };
+		AD7743551871A16F003A13C4 /* success_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success_1.wav; sourceTree = "<group>"; };
+		AD7743561871A16F003A13C4 /* top_gb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_gb.png; sourceTree = "<group>"; };
+		AD7743571871A16F003A13C4 /* top_gb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top_gb@2x.png"; sourceTree = "<group>"; };
+		ADD7C8EB18719A3100400EC8 /* WaveLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD7C8EE18719A3100400EC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ADD7C8F018719A3100400EC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ADD7C8F218719A3100400EC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ADD7C8F618719A3100400EC8 /* WaveLocation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaveLocation-Info.plist"; sourceTree = "<group>"; };
+		ADD7C8F818719A3100400EC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADD7C8FA18719A3100400EC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADD7C8FC18719A3100400EC8 /* WaveLocation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaveLocation-Prefix.pch"; sourceTree = "<group>"; };
+		ADD7C8FD18719A3100400EC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ADD7C8FE18719A3100400EC8 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		ADD7C90018719A3100400EC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ADD7C90618719A3100400EC8 /* WaveLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaveLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD7C90718719A3100400EC8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ADD7C90F18719A3100400EC8 /* WaveLocationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaveLocationTests-Info.plist"; sourceTree = "<group>"; };
+		ADD7C91118719A3100400EC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADD7C91318719A3100400EC8 /* WaveLocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveLocationTests.m; sourceTree = "<group>"; };
+		ADD7C91E18719C5700400EC8 /* callout_anchor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callout_anchor.png; sourceTree = "<group>"; };
+		ADD7C91F18719C5700400EC8 /* callout_anchor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "callout_anchor@2x.png"; sourceTree = "<group>"; };
+		ADD7C92018719C5700400EC8 /* callout_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callout_bg.png; sourceTree = "<group>"; };
+		ADD7C92118719C5700400EC8 /* callout_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "callout_bg@2x.png"; sourceTree = "<group>"; };
+		ADD7C92218719C5700400EC8 /* callout_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callout_left.png; sourceTree = "<group>"; };
+		ADD7C92318719C5700400EC8 /* callout_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "callout_left@2x.png"; sourceTree = "<group>"; };
+		ADD7C92418719C5700400EC8 /* callout_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callout_right.png; sourceTree = "<group>"; };
+		ADD7C92518719C5700400EC8 /* callout_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "callout_right@2x.png"; sourceTree = "<group>"; };
+		ADD7C92618719C5700400EC8 /* NAAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAAnnotation.h; sourceTree = "<group>"; };
+		ADD7C92718719C5700400EC8 /* NAAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAAnnotation.m; sourceTree = "<group>"; };
+		ADD7C92818719C5700400EC8 /* NACallOutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NACallOutView.h; sourceTree = "<group>"; };
+		ADD7C92918719C5700400EC8 /* NACallOutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NACallOutView.m; sourceTree = "<group>"; };
+		ADD7C92A18719C5700400EC8 /* NAMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAMapView.h; sourceTree = "<group>"; };
+		ADD7C92B18719C5700400EC8 /* NAMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAMapView.m; sourceTree = "<group>"; };
+		ADD7C92C18719C5700400EC8 /* NAPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAPinAnnotationView.h; sourceTree = "<group>"; };
+		ADD7C92D18719C5700400EC8 /* NAPinAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAPinAnnotationView.m; sourceTree = "<group>"; };
+		ADD7C92E18719C5700400EC8 /* pinGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinGreen.png; sourceTree = "<group>"; };
+		ADD7C92F18719C5700400EC8 /* pinGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinGreen@2x.png"; sourceTree = "<group>"; };
+		ADD7C93018719C5700400EC8 /* pinGreenFloating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinGreenFloating.png; sourceTree = "<group>"; };
+		ADD7C93118719C5700400EC8 /* pinGreenFloating@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinGreenFloating@2x.png"; sourceTree = "<group>"; };
+		ADD7C93218719C5700400EC8 /* pinPurple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinPurple.png; sourceTree = "<group>"; };
+		ADD7C93318719C5700400EC8 /* pinPurple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinPurple@2x.png"; sourceTree = "<group>"; };
+		ADD7C93418719C5700400EC8 /* pinPurpleFloating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinPurpleFloating.png; sourceTree = "<group>"; };
+		ADD7C93518719C5700400EC8 /* pinPurpleFloating@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinPurpleFloating@2x.png"; sourceTree = "<group>"; };
+		ADD7C93618719C5700400EC8 /* pinRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinRed.png; sourceTree = "<group>"; };
+		ADD7C93718719C5700400EC8 /* pinRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinRed@2x.png"; sourceTree = "<group>"; };
+		ADD7C93818719C5700400EC8 /* pinRedFloating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinRedFloating.png; sourceTree = "<group>"; };
+		ADD7C93918719C5700400EC8 /* pinRedFloating@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinRedFloating@2x.png"; sourceTree = "<group>"; };
+		ADD7C95218719CAA00400EC8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		ADD7C95318719CAA00400EC8 /* MapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapViewController.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADD7C8E818719A3100400EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD77432E1871A091003A13C4 /* AVFoundation.framework in Frameworks */,
+				AD77432C1871A089003A13C4 /* AudioToolbox.framework in Frameworks */,
+				AD77432A1871A080003A13C4 /* QuartzCore.framework in Frameworks */,
+				AD7743281871A074003A13C4 /* libz.dylib in Frameworks */,
+				AD7743261871A06D003A13C4 /* MobileCoreServices.framework in Frameworks */,
+				AD7743241871A063003A13C4 /* SystemConfiguration.framework in Frameworks */,
+				AD7743221871A059003A13C4 /* OpenGLES.framework in Frameworks */,
+				AD7743201871A051003A13C4 /* Accelerate.framework in Frameworks */,
+				ADD7C8F118719A3100400EC8 /* CoreGraphics.framework in Frameworks */,
+				ADD7C8F318719A3100400EC8 /* UIKit.framework in Frameworks */,
+				ADD7C8EF18719A3100400EC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD7C90318719A3100400EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD7C90818719A3100400EC8 /* XCTest.framework in Frameworks */,
+				ADD7C90A18719A3100400EC8 /* UIKit.framework in Frameworks */,
+				ADD7C90918719A3100400EC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD77431C18719E54003A13C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD7743551871A16F003A13C4 /* success_1.wav */,
+				AD7743561871A16F003A13C4 /* top_gb.png */,
+				AD7743571871A16F003A13C4 /* top_gb@2x.png */,
+				AD77431D18719E54003A13C4 /* 11.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD77432F1871A0DB003A13C4 /* freq_util */ = {
+			isa = PBXGroup;
+			children = (
+				AD7743301871A0DB003A13C4 /* bb_freq_util.cpp */,
+				AD7743311871A0DB003A13C4 /* bb_freq_util.h */,
+				AD7743321871A0DB003A13C4 /* bb_header.h */,
+			);
+			path = freq_util;
+			sourceTree = "<group>";
+		};
+		AD7743331871A0DB003A13C4 /* queue */ = {
+			isa = PBXGroup;
+			children = (
+				AD7743341871A0DB003A13C4 /* queue.cpp */,
+				AD7743351871A0DB003A13C4 /* queue.h */,
+			);
+			path = queue;
+			sourceTree = "<group>";
+		};
+		AD7743361871A0DB003A13C4 /* rscode */ = {
+			isa = PBXGroup;
+			children = (
+				AD7743371871A0DB003A13C4 /* rscode.cpp */,
+				AD7743381871A0DB003A13C4 /* rscode.h */,
+			);
+			path = rscode;
+			sourceTree = "<group>";
+		};
+		AD7743391871A0DB003A13C4 /* iPublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				AD77433A1871A0DB003A13C4 /* CABitOperations.h */,
+				AD77433B1871A0DB003A13C4 /* CADebugMacros.cpp */,
+				AD77433C1871A0DB003A13C4 /* CADebugMacros.h */,
+				AD77433D1871A0DB003A13C4 /* CAMath.h */,
+				AD77433E1871A0DB003A13C4 /* CAStreamBasicDescription.cpp */,
+				AD77433F1871A0DB003A13C4 /* CAStreamBasicDescription.h */,
+				AD7743401871A0DB003A13C4 /* CAXException.cpp */,
+				AD7743411871A0DB003A13C4 /* CAXException.h */,
+			);
+			path = iPublicUtility;
+			sourceTree = "<group>";
+		};
+		AD7743481871A165003A13C4 /* wave_listener */ = {
+			isa = PBXGroup;
+			children = (
+				AD7743491871A165003A13C4 /* aurio_helper.cpp */,
+				AD77434A1871A165003A13C4 /* aurio_helper.h */,
+				AD77434B1871A165003A13C4 /* EAGLView.h */,
+				AD77434C1871A165003A13C4 /* EAGLView.m */,
+				AD77434D1871A165003A13C4 /* FFTBufferManager.cpp */,
+				AD77434E1871A165003A13C4 /* FFTBufferManager.h */,
+				AD77434F1871A165003A13C4 /* WaveListener.h */,
+				AD7743501871A165003A13C4 /* WaveListener.mm */,
+			);
+			path = wave_listener;
+			sourceTree = "<group>";
+		};
+		ADD7C8E218719A3100400EC8 = {
+			isa = PBXGroup;
+			children = (
+				ADD7C8F418719A3100400EC8 /* WaveLocation */,
+				ADD7C90D18719A3100400EC8 /* WaveLocationTests */,
+				ADD7C8ED18719A3100400EC8 /* Frameworks */,
+				ADD7C8EC18719A3100400EC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADD7C8EC18719A3100400EC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADD7C8EB18719A3100400EC8 /* WaveLocation.app */,
+				ADD7C90618719A3100400EC8 /* WaveLocationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADD7C8ED18719A3100400EC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD77432D1871A091003A13C4 /* AVFoundation.framework */,
+				AD77432B1871A089003A13C4 /* AudioToolbox.framework */,
+				AD7743291871A080003A13C4 /* QuartzCore.framework */,
+				AD7743271871A074003A13C4 /* libz.dylib */,
+				AD7743251871A06D003A13C4 /* MobileCoreServices.framework */,
+				AD7743231871A063003A13C4 /* SystemConfiguration.framework */,
+				AD7743211871A059003A13C4 /* OpenGLES.framework */,
+				AD77431F1871A051003A13C4 /* Accelerate.framework */,
+				ADD7C8EE18719A3100400EC8 /* Foundation.framework */,
+				ADD7C8F018719A3100400EC8 /* CoreGraphics.framework */,
+				ADD7C8F218719A3100400EC8 /* UIKit.framework */,
+				ADD7C90718719A3100400EC8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADD7C8F418719A3100400EC8 /* WaveLocation */ = {
+			isa = PBXGroup;
+			children = (
+				AD7743481871A165003A13C4 /* wave_listener */,
+				AD77432F1871A0DB003A13C4 /* freq_util */,
+				AD7743331871A0DB003A13C4 /* queue */,
+				AD7743361871A0DB003A13C4 /* rscode */,
+				AD7743391871A0DB003A13C4 /* iPublicUtility */,
+				ADD7C91D18719C5700400EC8 /* NAMapKit */,
+				ADD7C8FD18719A3100400EC8 /* AppDelegate.h */,
+				ADD7C8FE18719A3100400EC8 /* AppDelegate.mm */,
+				ADD7C95218719CAA00400EC8 /* MapViewController.h */,
+				ADD7C95318719CAA00400EC8 /* MapViewController.mm */,
+				ADD7C90018719A3100400EC8 /* Images.xcassets */,
+				AD77431C18719E54003A13C4 /* Resources */,
+				ADD7C8F518719A3100400EC8 /* Supporting Files */,
+			);
+			path = WaveLocation;
+			sourceTree = "<group>";
+		};
+		ADD7C8F518719A3100400EC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADD7C8F618719A3100400EC8 /* WaveLocation-Info.plist */,
+				ADD7C8F718719A3100400EC8 /* InfoPlist.strings */,
+				ADD7C8FA18719A3100400EC8 /* main.m */,
+				ADD7C8FC18719A3100400EC8 /* WaveLocation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADD7C90D18719A3100400EC8 /* WaveLocationTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADD7C91318719A3100400EC8 /* WaveLocationTests.m */,
+				ADD7C90E18719A3100400EC8 /* Supporting Files */,
+			);
+			path = WaveLocationTests;
+			sourceTree = "<group>";
+		};
+		ADD7C90E18719A3100400EC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADD7C90F18719A3100400EC8 /* WaveLocationTests-Info.plist */,
+				ADD7C91018719A3100400EC8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADD7C91D18719C5700400EC8 /* NAMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				ADD7C91E18719C5700400EC8 /* callout_anchor.png */,
+				ADD7C91F18719C5700400EC8 /* callout_anchor@2x.png */,
+				ADD7C92018719C5700400EC8 /* callout_bg.png */,
+				ADD7C92118719C5700400EC8 /* callout_bg@2x.png */,
+				ADD7C92218719C5700400EC8 /* callout_left.png */,
+				ADD7C92318719C5700400EC8 /* callout_left@2x.png */,
+				ADD7C92418719C5700400EC8 /* callout_right.png */,
+				ADD7C92518719C5700400EC8 /* callout_right@2x.png */,
+				ADD7C92618719C5700400EC8 /* NAAnnotation.h */,
+				ADD7C92718719C5700400EC8 /* NAAnnotation.m */,
+				ADD7C92818719C5700400EC8 /* NACallOutView.h */,
+				ADD7C92918719C5700400EC8 /* NACallOutView.m */,
+				ADD7C92A18719C5700400EC8 /* NAMapView.h */,
+				ADD7C92B18719C5700400EC8 /* NAMapView.m */,
+				ADD7C92C18719C5700400EC8 /* NAPinAnnotationView.h */,
+				ADD7C92D18719C5700400EC8 /* NAPinAnnotationView.m */,
+				ADD7C92E18719C5700400EC8 /* pinGreen.png */,
+				ADD7C92F18719C5700400EC8 /* pinGreen@2x.png */,
+				ADD7C93018719C5700400EC8 /* pinGreenFloating.png */,
+				ADD7C93118719C5700400EC8 /* pinGreenFloating@2x.png */,
+				ADD7C93218719C5700400EC8 /* pinPurple.png */,
+				ADD7C93318719C5700400EC8 /* pinPurple@2x.png */,
+				ADD7C93418719C5700400EC8 /* pinPurpleFloating.png */,
+				ADD7C93518719C5700400EC8 /* pinPurpleFloating@2x.png */,
+				ADD7C93618719C5700400EC8 /* pinRed.png */,
+				ADD7C93718719C5700400EC8 /* pinRed@2x.png */,
+				ADD7C93818719C5700400EC8 /* pinRedFloating.png */,
+				ADD7C93918719C5700400EC8 /* pinRedFloating@2x.png */,
+			);
+			path = NAMapKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADD7C8EA18719A3100400EC8 /* WaveLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADD7C91718719A3100400EC8 /* Build configuration list for PBXNativeTarget "WaveLocation" */;
+			buildPhases = (
+				ADD7C8E718719A3100400EC8 /* Sources */,
+				ADD7C8E818719A3100400EC8 /* Frameworks */,
+				ADD7C8E918719A3100400EC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaveLocation;
+			productName = WaveLocation;
+			productReference = ADD7C8EB18719A3100400EC8 /* WaveLocation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADD7C90518719A3100400EC8 /* WaveLocationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADD7C91A18719A3100400EC8 /* Build configuration list for PBXNativeTarget "WaveLocationTests" */;
+			buildPhases = (
+				ADD7C90218719A3100400EC8 /* Sources */,
+				ADD7C90318719A3100400EC8 /* Frameworks */,
+				ADD7C90418719A3100400EC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADD7C90C18719A3100400EC8 /* PBXTargetDependency */,
+			);
+			name = WaveLocationTests;
+			productName = WaveLocationTests;
+			productReference = ADD7C90618719A3100400EC8 /* WaveLocationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADD7C8E318719A3100400EC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Littlebox222;
+				TargetAttributes = {
+					ADD7C90518719A3100400EC8 = {
+						TestTargetID = ADD7C8EA18719A3100400EC8;
+					};
+				};
+			};
+			buildConfigurationList = ADD7C8E618719A3100400EC8 /* Build configuration list for PBXProject "WaveLocation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ADD7C8E218719A3100400EC8;
+			productRefGroup = ADD7C8EC18719A3100400EC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADD7C8EA18719A3100400EC8 /* WaveLocation */,
+				ADD7C90518719A3100400EC8 /* WaveLocationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADD7C8E918719A3100400EC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD7C94A18719C5700400EC8 /* pinPurple.png in Resources */,
+				ADD7C94118719C5700400EC8 /* callout_right@2x.png in Resources */,
+				AD7743581871A16F003A13C4 /* success_1.wav in Resources */,
+				ADD7C95118719C5700400EC8 /* pinRedFloating@2x.png in Resources */,
+				ADD7C94618719C5700400EC8 /* pinGreen.png in Resources */,
+				ADD7C93B18719C5700400EC8 /* callout_anchor@2x.png in Resources */,
+				ADD7C94018719C5700400EC8 /* callout_right.png in Resources */,
+				ADD7C93E18719C5700400EC8 /* callout_left.png in Resources */,
+				ADD7C93C18719C5700400EC8 /* callout_bg.png in Resources */,
+				AD77431E18719E54003A13C4 /* 11.png in Resources */,
+				AD7743591871A16F003A13C4 /* top_gb.png in Resources */,
+				AD77435A1871A16F003A13C4 /* top_gb@2x.png in Resources */,
+				ADD7C94E18719C5700400EC8 /* pinRed.png in Resources */,
+				ADD7C93D18719C5700400EC8 /* callout_bg@2x.png in Resources */,
+				ADD7C94D18719C5700400EC8 /* pinPurpleFloating@2x.png in Resources */,
+				ADD7C8F918719A3100400EC8 /* InfoPlist.strings in Resources */,
+				ADD7C94918719C5700400EC8 /* pinGreenFloating@2x.png in Resources */,
+				ADD7C94F18719C5700400EC8 /* pinRed@2x.png in Resources */,
+				ADD7C95018719C5700400EC8 /* pinRedFloating.png in Resources */,
+				ADD7C94718719C5700400EC8 /* pinGreen@2x.png in Resources */,
+				ADD7C94818719C5700400EC8 /* pinGreenFloating.png in Resources */,
+				ADD7C94B18719C5700400EC8 /* pinPurple@2x.png in Resources */,
+				ADD7C93A18719C5700400EC8 /* callout_anchor.png in Resources */,
+				ADD7C94C18719C5700400EC8 /* pinPurpleFloating.png in Resources */,
+				ADD7C93F18719C5700400EC8 /* callout_left@2x.png in Resources */,
+				ADD7C90118719A3100400EC8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD7C90418719A3100400EC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD7C91218719A3100400EC8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADD7C8E718719A3100400EC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD7C94318719C5700400EC8 /* NACallOutView.m in Sources */,
+				AD7743441871A0DB003A13C4 /* rscode.cpp in Sources */,
+				ADD7C94218719C5700400EC8 /* NAAnnotation.m in Sources */,
+				AD7743541871A165003A13C4 /* WaveListener.mm in Sources */,
+				AD7743521871A165003A13C4 /* EAGLView.m in Sources */,
+				ADD7C94518719C5700400EC8 /* NAPinAnnotationView.m in Sources */,
+				ADD7C94418719C5700400EC8 /* NAMapView.m in Sources */,
+				ADD7C8FF18719A3100400EC8 /* AppDelegate.mm in Sources */,
+				AD7743431871A0DB003A13C4 /* queue.cpp in Sources */,
+				ADD7C8FB18719A3100400EC8 /* main.m in Sources */,
+				ADD7C95418719CAA00400EC8 /* MapViewController.mm in Sources */,
+				AD7743531871A165003A13C4 /* FFTBufferManager.cpp in Sources */,
+				AD7743421871A0DB003A13C4 /* bb_freq_util.cpp in Sources */,
+				AD7743471871A0DB003A13C4 /* CAXException.cpp in Sources */,
+				AD7743451871A0DB003A13C4 /* CADebugMacros.cpp in Sources */,
+				AD7743511871A165003A13C4 /* aurio_helper.cpp in Sources */,
+				AD7743461871A0DB003A13C4 /* CAStreamBasicDescription.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD7C90218719A3100400EC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD7C91418719A3100400EC8 /* WaveLocationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADD7C90C18719A3100400EC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADD7C8EA18719A3100400EC8 /* WaveLocation */;
+			targetProxy = ADD7C90B18719A3100400EC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADD7C8F718719A3100400EC8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADD7C8F818719A3100400EC8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ADD7C91018719A3100400EC8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADD7C91118719A3100400EC8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADD7C91518719A3100400EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ADD7C91618719A3100400EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADD7C91818719A3100400EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bruce Chen (KKYLDFR684)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaveLocation/WaveLocation-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = "WaveLocation/WaveLocation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ADD7C91918719A3100400EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bruce Chen (KKYLDFR684)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaveLocation/WaveLocation-Prefix.pch";
+				INFOPLIST_FILE = "WaveLocation/WaveLocation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ADD7C91B18719A3100400EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WaveLocation.app/WaveLocation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaveLocation/WaveLocation-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WaveLocationTests/WaveLocationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ADD7C91C18719A3100400EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WaveLocation.app/WaveLocation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaveLocation/WaveLocation-Prefix.pch";
+				INFOPLIST_FILE = "WaveLocationTests/WaveLocationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADD7C8E618719A3100400EC8 /* Build configuration list for PBXProject "WaveLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADD7C91518719A3100400EC8 /* Debug */,
+				ADD7C91618719A3100400EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADD7C91718719A3100400EC8 /* Build configuration list for PBXNativeTarget "WaveLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADD7C91818719A3100400EC8 /* Debug */,
+				ADD7C91918719A3100400EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADD7C91A18719A3100400EC8 /* Build configuration list for PBXNativeTarget "WaveLocationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADD7C91B18719A3100400EC8 /* Debug */,
+				ADD7C91C18719A3100400EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADD7C8E318719A3100400EC8 /* Project object */;
+}
