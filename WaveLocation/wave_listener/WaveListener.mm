@@ -12,8 +12,6 @@
 #import "CAXException.h"
 #import <AVFoundation/AVFoundation.h>
 
-static WaveListener *sharedObject = nil;
-
 @implementation WaveListener
 
 // value, a, r, g, b
@@ -1355,17 +1353,19 @@ static queue   _savedBuffer[32];
     switch_freq(freqIsHigh);
 }
 
+static WaveListener *kSharedObject = nil;
+
 + (WaveListener *)sharedWaveListener {
     
     @synchronized (self)
     {
-        if (sharedObject == nil)
+        if (kSharedObject == nil)
         {
-            sharedObject = [[[self alloc] init] autorelease];
-            sharedObject.view = [[[EAGLView alloc] initWithFrame:CGRectMake(0.0, 0.0, 1.0, 1.0)] autorelease];
+            kSharedObject = [[self alloc] init];
+            kSharedObject.view = [[[EAGLView alloc] initWithFrame:CGRectMake(0.0, 0.0, 1.0, 1.0)] autorelease];
         }
     }
-    return [sharedObject retain];
+    return kSharedObject;
 }
 
 - (void)setListening:(BOOL)state {
