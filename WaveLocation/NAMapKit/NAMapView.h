@@ -19,6 +19,8 @@
 - (CGPoint)zoomRelativePoint:(CGPoint)point;
 - (void)selectAnnotation:(NAAnnotation *)annotation animated:(BOOL)animate;
 
+- (UIImage *)getMapImage;
+
 @end
 
 

@@ -219,6 +219,13 @@
     if(self.calloutView){
         [self removeObserver:self.calloutView forKeyPath:@"contentSize"];
     }
+    
+    [super dealloc];
+}
+
+- (UIImage *)getMapImage {
+    
+    return self.imageView.image;
 }
 
 #pragma mark - UIScrollViewDelegate

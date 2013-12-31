@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "NAMapView.h"
 #import <AVFoundation/AVFoundation.h>
 #import "WaveListener.h"
 
 @interface MapViewController : UIViewController <ListenedActionDelegate, AVAudioPlayerDelegate>
 
 @property (nonatomic,retain) AVAudioPlayer *successPlayer;
+@property (nonatomic,retain) NAMapView *mapView;
 
 - (void)playSuccessSound;
 
