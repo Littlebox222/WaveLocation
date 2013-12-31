@@ -53,7 +53,7 @@
     
     [self.view addSubview:self.mapView];
     
-    
+    /*
     NAAnnotation *annotation_1 = [NAAnnotation annotationWithPoint:CGPointMake(600.0f, 830.0f)];
     annotation_1.title = @"工位-1";
     annotation_1.color = NAPinColorGreen;
@@ -83,6 +83,7 @@
     annotation_5.color = NAPinColorRed;
     
 	[self.mapView addAnnotation:annotation_5 animated:YES];
+     */
     
     
     // Listener
@@ -157,8 +158,7 @@
 
 - (void)listenedAction:(NSString *)resultCode {
     
-//    NSString *geoHashString = @"69lmd24npf";
-    NSString *geoHashString = @"6";
+    NSString *geoHashString = @"69lmd24npf";
     
     if (![GeoHash verifyHash:geoHashString]) {
         
@@ -169,7 +169,9 @@
         [self playSuccessSound];
         [[WaveListener sharedWaveListener] setListening:YES];
         
-        GHArea *area = [GeoHash areaForHash:geoHashString];
+        GHArea *point = [GeoHash areaForHash:geoHashString];
+        
+        GHArea *area = [GeoHash areaForHash:[geoHashString substringWithRange:NSMakeRange(0, 1)]];
         
         NSLog(@"\nlatitude.max : %f", [area.latitude.max floatValue]);
         NSLog(@"latitude.min : %f", [area.latitude.min floatValue]);
@@ -185,6 +187,15 @@
         NSLog(@"pixel_x_min : %d", pixel_x_min);
         NSLog(@"pixel_y_max : %d", pixel_y_max);
         NSLog(@"pixel_y_min : %d", pixel_y_min);
+        
+        int p_x = (([point.latitude.max floatValue]+[point.latitude.min floatValue])/2.0 + 180.0) * [_mapView getMapImage].size.width / 360.0 + 1;
+        int p_y = (90.0 - ([point.longitude.max floatValue]+[point.longitude.min floatValue])/2.0) * [_mapView getMapImage].size.height / 180.0 +1;
+        
+        NAAnnotation * annotation = [NAAnnotation annotationWithPoint:CGPointMake(p_x, p_y)];
+        annotation.title = @"3号会议室";
+        annotation.color = NAPinColorRed;
+        
+        [self.mapView addAnnotation:annotation animated:YES];
     }
 }
 
