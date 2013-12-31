@@ -29,6 +29,11 @@
 		AD7743581871A16F003A13C4 /* success_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = AD7743551871A16F003A13C4 /* success_1.wav */; };
 		AD7743591871A16F003A13C4 /* top_gb.png in Resources */ = {isa = PBXBuildFile; fileRef = AD7743561871A16F003A13C4 /* top_gb.png */; };
 		AD77435A1871A16F003A13C4 /* top_gb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD7743571871A16F003A13C4 /* top_gb@2x.png */; };
+		AD77436618726DBB003A13C4 /* cgeohash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77435D18726DBB003A13C4 /* cgeohash.m */; };
+		AD77436718726DBB003A13C4 /* GeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77435F18726DBB003A13C4 /* GeoHash.m */; };
+		AD77436818726DBB003A13C4 /* GHArea.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77436118726DBB003A13C4 /* GHArea.m */; };
+		AD77436918726DBB003A13C4 /* GHNeighbors.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77436318726DBB003A13C4 /* GHNeighbors.m */; };
+		AD77436A18726DBB003A13C4 /* GHRange.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77436518726DBB003A13C4 /* GHRange.m */; };
 		ADD7C8EF18719A3100400EC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C8EE18719A3100400EC8 /* Foundation.framework */; };
 		ADD7C8F118719A3100400EC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C8F018719A3100400EC8 /* CoreGraphics.framework */; };
 		ADD7C8F318719A3100400EC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C8F218719A3100400EC8 /* UIKit.framework */; };
@@ -114,6 +119,16 @@
 		AD7743551871A16F003A13C4 /* success_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success_1.wav; sourceTree = "<group>"; };
 		AD7743561871A16F003A13C4 /* top_gb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_gb.png; sourceTree = "<group>"; };
 		AD7743571871A16F003A13C4 /* top_gb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top_gb@2x.png"; sourceTree = "<group>"; };
+		AD77435C18726DBB003A13C4 /* cgeohash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgeohash.h; sourceTree = "<group>"; };
+		AD77435D18726DBB003A13C4 /* cgeohash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cgeohash.m; sourceTree = "<group>"; };
+		AD77435E18726DBB003A13C4 /* GeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoHash.h; sourceTree = "<group>"; };
+		AD77435F18726DBB003A13C4 /* GeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoHash.m; sourceTree = "<group>"; };
+		AD77436018726DBB003A13C4 /* GHArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHArea.h; sourceTree = "<group>"; };
+		AD77436118726DBB003A13C4 /* GHArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHArea.m; sourceTree = "<group>"; };
+		AD77436218726DBB003A13C4 /* GHNeighbors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHNeighbors.h; sourceTree = "<group>"; };
+		AD77436318726DBB003A13C4 /* GHNeighbors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHNeighbors.m; sourceTree = "<group>"; };
+		AD77436418726DBB003A13C4 /* GHRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRange.h; sourceTree = "<group>"; };
+		AD77436518726DBB003A13C4 /* GHRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRange.m; sourceTree = "<group>"; };
 		ADD7C8EB18719A3100400EC8 /* WaveLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD7C8EE18719A3100400EC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ADD7C8F018719A3100400EC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -263,6 +278,23 @@
 			path = wave_listener;
 			sourceTree = "<group>";
 		};
+		AD77435B18726DBB003A13C4 /* geohash */ = {
+			isa = PBXGroup;
+			children = (
+				AD77435C18726DBB003A13C4 /* cgeohash.h */,
+				AD77435D18726DBB003A13C4 /* cgeohash.m */,
+				AD77435E18726DBB003A13C4 /* GeoHash.h */,
+				AD77435F18726DBB003A13C4 /* GeoHash.m */,
+				AD77436018726DBB003A13C4 /* GHArea.h */,
+				AD77436118726DBB003A13C4 /* GHArea.m */,
+				AD77436218726DBB003A13C4 /* GHNeighbors.h */,
+				AD77436318726DBB003A13C4 /* GHNeighbors.m */,
+				AD77436418726DBB003A13C4 /* GHRange.h */,
+				AD77436518726DBB003A13C4 /* GHRange.m */,
+			);
+			path = geohash;
+			sourceTree = "<group>";
+		};
 		ADD7C8E218719A3100400EC8 = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +336,7 @@
 		ADD7C8F418719A3100400EC8 /* WaveLocation */ = {
 			isa = PBXGroup;
 			children = (
+				AD77435B18726DBB003A13C4 /* geohash */,
 				AD7743481871A165003A13C4 /* wave_listener */,
 				AD77432F1871A0DB003A13C4 /* freq_util */,
 				AD7743331871A0DB003A13C4 /* queue */,
@@ -507,14 +540,19 @@
 				ADD7C94318719C5700400EC8 /* NACallOutView.m in Sources */,
 				AD7743441871A0DB003A13C4 /* rscode.cpp in Sources */,
 				ADD7C94218719C5700400EC8 /* NAAnnotation.m in Sources */,
+				AD77436818726DBB003A13C4 /* GHArea.m in Sources */,
 				AD7743541871A165003A13C4 /* WaveListener.mm in Sources */,
 				AD7743521871A165003A13C4 /* EAGLView.m in Sources */,
 				ADD7C94518719C5700400EC8 /* NAPinAnnotationView.m in Sources */,
+				AD77436718726DBB003A13C4 /* GeoHash.m in Sources */,
+				AD77436A18726DBB003A13C4 /* GHRange.m in Sources */,
 				ADD7C94418719C5700400EC8 /* NAMapView.m in Sources */,
 				ADD7C8FF18719A3100400EC8 /* AppDelegate.mm in Sources */,
 				AD7743431871A0DB003A13C4 /* queue.cpp in Sources */,
 				ADD7C8FB18719A3100400EC8 /* main.m in Sources */,
+				AD77436918726DBB003A13C4 /* GHNeighbors.m in Sources */,
 				ADD7C95418719CAA00400EC8 /* MapViewController.mm in Sources */,
+				AD77436618726DBB003A13C4 /* cgeohash.m in Sources */,
 				AD7743531871A165003A13C4 /* FFTBufferManager.cpp in Sources */,
 				AD7743421871A0DB003A13C4 /* bb_freq_util.cpp in Sources */,
 				AD7743471871A0DB003A13C4 /* CAXException.cpp in Sources */,
