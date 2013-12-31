@@ -21,6 +21,8 @@
 
 - (UIImage *)getMapImage;
 
+
+- (void)addCurrentLocateAnnotation:(NAAnnotation *)annotation animated:(BOOL)animate;
 @end
 
 

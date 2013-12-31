@@ -144,10 +144,13 @@
     AudioSessionGetProperty(kAudioSessionProperty_AudioRouteDescription, &dataSize, &currentRouteDescriptionDictionary);
     if (currentRouteDescriptionDictionary) {
         CFArrayRef outputs = (CFArrayRef)CFDictionaryGetValue(currentRouteDescriptionDictionary, kAudioSession_AudioRouteKey_Outputs);
-        if(CFArrayGetCount(outputs) > 0) {
-            CFDictionaryRef currentOutput = (CFDictionaryRef)CFArrayGetValueAtIndex(outputs, 0);
-            CFStringRef outputType = (CFStringRef)CFDictionaryGetValue(currentOutput, kAudioSession_AudioRouteKey_Type);
-            return (CFStringCompare(outputType, kAudioSessionOutputRoute_AirPlay, 0) == kCFCompareEqualTo);
+        
+        if (NSNotFound == [[[UIDevice currentDevice] model] rangeOfString:@"Simulator"].location) {
+            if(CFArrayGetCount(outputs) > 0) {
+                CFDictionaryRef currentOutput = (CFDictionaryRef)CFArrayGetValueAtIndex(outputs, 0);
+                CFStringRef outputType = (CFStringRef)CFDictionaryGetValue(currentOutput, kAudioSession_AudioRouteKey_Type);
+                return (CFStringCompare(outputType, kAudioSessionOutputRoute_AirPlay, 0) == kCFCompareEqualTo);
+            }
         }
     }
     
@@ -195,7 +198,7 @@
         annotation.title = @"3号会议室";
         annotation.color = NAPinColorRed;
         
-        [self.mapView addAnnotation:annotation animated:YES];
+        [self.mapView addCurrentLocateAnnotation:annotation animated:YES];
     }
 }
 
