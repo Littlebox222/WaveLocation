@@ -85,6 +85,51 @@
     [self addAnnotation:annontation animated:YES];
 }
 
+
+/* 添加当前位置
+ * added by hanchao
+ */
+- (void)addCurrentLocateAnnotation:(NAAnnotation *)annotation animated:(BOOL)animate {
+    
+    //隐藏以前的点
+    //TODO:需要优化效率
+    [self hideCallOut];
+    for(NAPinAnnotationView *annotationView in self.annotationViews){
+        [annotationView removeFromSuperview];
+        [self removeObserver:annotationView forKeyPath:@"contentSize"];
+        [self.annotationViews removeObject:annotationView];
+    }
+    
+    NAPinAnnotationView *annontationView = [[NAPinAnnotationView alloc] initWithAnnotation:annotation onMapView:self];
+    
+    [annontationView addTarget:self action:@selector(showCallOut:) forControlEvents:UIControlEventTouchDown];
+    [self addObserver:annontationView forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
+    
+    //TODO: 添加渐变动画
+//    if(animate){
+//        annontationView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0.0f, -annontationView.center.y);
+//    }
+    
+    [self addSubview:annontationView];
+    
+//    if(animate){
+//        annontationView.animating = YES;
+//        [UIView animateWithDuration:NA_PIN_ANIMATION_DURATION animations:^{
+//            annontationView.transform = CGAffineTransformIdentity;
+//        }
+//                         completion:^ (BOOL finished) {
+//                             annontationView.animating = NO;
+//                         }];
+//    }
+    
+    if(!self.annotationViews){
+        self.annotationViews = [[NSMutableArray alloc] init];
+    }
+    
+    [self.annotationViews addObject:annontationView];
+    [self bringSubviewToFront:self.calloutView];
+}
+
 - (void)addAnnotation:(NAAnnotation *)annotation animated:(BOOL)animate {
     
     NAPinAnnotationView *annontationView = [[NAPinAnnotationView alloc] initWithAnnotation:annotation onMapView:self];
