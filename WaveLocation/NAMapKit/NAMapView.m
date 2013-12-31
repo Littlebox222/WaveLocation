@@ -93,7 +93,7 @@
     
     //隐藏以前的点
     //TODO:需要优化效率
-    [self hideCallOut];
+//    [self hideCallOut];
     for(NAPinAnnotationView *annotationView in self.annotationViews){
         [annotationView removeFromSuperview];
         [self removeObserver:annotationView forKeyPath:@"contentSize"];
@@ -106,21 +106,31 @@
     [self addObserver:annontationView forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
     
     //TODO: 添加渐变动画
-//    if(animate){
+    if(animate){
 //        annontationView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0.0f, -annontationView.center.y);
-//    }
+        
+        annontationView.alpha = 0.0f;
+        
+        [UIView animateWithDuration:NA_PIN_ANIMATION_DURATION
+                              delay:0
+                            options:UIViewAnimationOptionCurveEaseInOut
+                         animations:^{
+                             annontationView.alpha = 1.0f;
+                         } completion:nil];
+        
+    }
     
     [self addSubview:annontationView];
     
-//    if(animate){
-//        annontationView.animating = YES;
-//        [UIView animateWithDuration:NA_PIN_ANIMATION_DURATION animations:^{
-//            annontationView.transform = CGAffineTransformIdentity;
-//        }
-//                         completion:^ (BOOL finished) {
-//                             annontationView.animating = NO;
-//                         }];
-//    }
+    if(animate){
+        annontationView.animating = YES;
+        [UIView animateWithDuration:NA_PIN_ANIMATION_DURATION animations:^{
+            annontationView.transform = CGAffineTransformIdentity;
+        }
+                         completion:^ (BOOL finished) {
+                             annontationView.animating = NO;
+                         }];
+    }
     
     if(!self.annotationViews){
         self.annotationViews = [[NSMutableArray alloc] init];
