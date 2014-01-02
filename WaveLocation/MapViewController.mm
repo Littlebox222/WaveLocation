@@ -195,10 +195,11 @@
         int p_y = (90.0 - ([point.longitude.max floatValue]+[point.longitude.min floatValue])/2.0) * [_mapView getMapImage].size.height / 180.0 +1;
         
         NAAnnotation * annotation = [NAAnnotation annotationWithPoint:CGPointMake(p_x, p_y)];
-        annotation.title = @"3号会议室";
+        annotation.title = @"理想17南16-1";
         annotation.color = NAPinColorRed;
         
         [self.mapView addCurrentLocateAnnotation:annotation animated:YES];
+        [self.mapView selectAnnotation:annotation animated:YES];
     }
 }
 
