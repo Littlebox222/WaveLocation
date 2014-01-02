@@ -10,11 +10,13 @@
 #import "NAMapView.h"
 #import <AVFoundation/AVFoundation.h>
 #import "WaveListener.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface MapViewController : UIViewController <ListenedActionDelegate, AVAudioPlayerDelegate>
+@interface MapViewController : UIViewController <ListenedActionDelegate, AVAudioPlayerDelegate, CLLocationManagerDelegate>
 
-@property (nonatomic,retain) AVAudioPlayer *successPlayer;
-@property (nonatomic,retain) NAMapView *mapView;
+@property (nonatomic, retain) AVAudioPlayer *successPlayer;
+@property (nonatomic, retain) NAMapView *mapView;
+@property (nonatomic, retain) CLLocationManager *locationManager;
 
 - (void)playSuccessSound;
 

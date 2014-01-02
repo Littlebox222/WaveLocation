@@ -18,11 +18,13 @@
 
 @synthesize mapView = _mapView;
 @synthesize successPlayer = _successPlayer;
+@synthesize locationManager = _locationManager;
 
 - (void)dealloc {
     
     [_successPlayer release];
     [_mapView release];
+    [_locationManager release];
     
     [super dealloc];
 }
@@ -89,6 +91,13 @@
     // Listener
     [WaveListener sharedWaveListener].listenedActionDelegate = self;
     [[WaveListener sharedWaveListener] startListening];
+    
+    // 罗盘
+    self.locationManager=[[[CLLocationManager alloc] init] autorelease];
+	self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+	self.locationManager.headingFilter = 0.5;
+	self.locationManager.delegate=self;
+	[self.locationManager startUpdatingHeading];
 }
 
 - (void)didReceiveMemoryWarning
@@ -201,6 +210,28 @@
         [self.mapView addCurrentLocateAnnotation:annotation animated:YES];
         [self.mapView selectAnnotation:annotation animated:YES];
     }
+}
+
+#pragma mark - CLLocationManagerDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading{
+
+	float oldRad =  -manager.heading.trueHeading * M_PI / 180.0f;
+	float newRad =  -newHeading.trueHeading * M_PI / 180.0f;
+    
+    /*
+	CABasicAnimation *theAnimation;
+    theAnimation=[CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    theAnimation.fromValue = [NSNumber numberWithFloat:oldRad];
+    theAnimation.toValue=[NSNumber numberWithFloat:newRad];
+    theAnimation.duration = 0.5f;
+    [compassImage.layer addAnimation:theAnimation forKey:@"animateMyRotation"];
+    compassImage.transform = CGAffineTransformMakeRotation(newRad);
+     */
+    
+    // manager.heading.trueHeading 这个是角度
+    // oldRad                      这个是对应的弧度
+	NSLog(@"%f (%f) => %f (%f)", manager.heading.trueHeading, oldRad, newHeading.trueHeading, newRad);
 }
 
 @end
