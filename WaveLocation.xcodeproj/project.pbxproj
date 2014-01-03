@@ -77,7 +77,6 @@
 		C1C479071876610A00D0C491 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1C479031876610A00D0C491 /* arrow@2x.png */; };
 		C1C479081876610A00D0C491 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = C1C479041876610A00D0C491 /* ball.png */; };
 		C1C479091876610A00D0C491 /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1C479051876610A00D0C491 /* ball@2x.png */; };
-		C1C4790B1876909500D0C491 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C4790A1876909500D0C491 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,7 +188,6 @@
 		C1C479031876610A00D0C491 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
 		C1C479041876610A00D0C491 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		C1C479051876610A00D0C491 /* ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@2x.png"; sourceTree = "<group>"; };
-		C1C4790A1876909500D0C491 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +195,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				AD77436C18756D33003A13C4 /* CoreLocation.framework in Frameworks */,
 				AD77432E1871A091003A13C4 /* AVFoundation.framework in Frameworks */,
 				AD77432C1871A089003A13C4 /* AudioToolbox.framework in Frameworks */,
@@ -338,9 +335,7 @@
 		ADD7C8ED18719A3100400EC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-
 				AD77436B18756D33003A13C4 /* CoreLocation.framework */,
-
 				AD77432D1871A091003A13C4 /* AVFoundation.framework */,
 				AD77432B1871A089003A13C4 /* AudioToolbox.framework */,
 				AD7743291871A080003A13C4 /* QuartzCore.framework */,
