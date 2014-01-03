@@ -34,6 +34,7 @@
 		AD77436818726DBB003A13C4 /* GHArea.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77436118726DBB003A13C4 /* GHArea.m */; };
 		AD77436918726DBB003A13C4 /* GHNeighbors.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77436318726DBB003A13C4 /* GHNeighbors.m */; };
 		AD77436A18726DBB003A13C4 /* GHRange.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77436518726DBB003A13C4 /* GHRange.m */; };
+		AD77436C18756D33003A13C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD77436B18756D33003A13C4 /* CoreLocation.framework */; };
 		ADD7C8EF18719A3100400EC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C8EE18719A3100400EC8 /* Foundation.framework */; };
 		ADD7C8F118719A3100400EC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C8F018719A3100400EC8 /* CoreGraphics.framework */; };
 		ADD7C8F318719A3100400EC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD7C8F218719A3100400EC8 /* UIKit.framework */; };
@@ -135,6 +136,7 @@
 		AD77436318726DBB003A13C4 /* GHNeighbors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHNeighbors.m; sourceTree = "<group>"; };
 		AD77436418726DBB003A13C4 /* GHRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRange.h; sourceTree = "<group>"; };
 		AD77436518726DBB003A13C4 /* GHRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRange.m; sourceTree = "<group>"; };
+		AD77436B18756D33003A13C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		ADD7C8EB18719A3100400EC8 /* WaveLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD7C8EE18719A3100400EC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ADD7C8F018719A3100400EC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -195,7 +197,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1C4790B1876909500D0C491 /* CoreLocation.framework in Frameworks */,
+
+				AD77436C18756D33003A13C4 /* CoreLocation.framework in Frameworks */,
 				AD77432E1871A091003A13C4 /* AVFoundation.framework in Frameworks */,
 				AD77432C1871A089003A13C4 /* AudioToolbox.framework in Frameworks */,
 				AD77432A1871A080003A13C4 /* QuartzCore.framework in Frameworks */,
@@ -335,7 +338,9 @@
 		ADD7C8ED18719A3100400EC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C1C4790A1876909500D0C491 /* CoreLocation.framework */,
+
+				AD77436B18756D33003A13C4 /* CoreLocation.framework */,
+
 				AD77432D1871A091003A13C4 /* AVFoundation.framework */,
 				AD77432B1871A089003A13C4 /* AudioToolbox.framework */,
 				AD7743291871A080003A13C4 /* QuartzCore.framework */,
