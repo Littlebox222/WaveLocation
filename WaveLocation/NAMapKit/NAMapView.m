@@ -10,6 +10,8 @@
 #import "NAPinAnnotationView.h"
 #import "NACallOutView.h"
 
+#import "CurrentLocationView.h"
+
 #define NA_PIN_ANIMATION_DURATION     0.5f
 #define NA_CALLOUT_ANIMATION_DURATION 0.1f
 #define NA_ZOOM_STEP                  1.5f
@@ -91,53 +93,58 @@
  */
 - (void)addCurrentLocateAnnotation:(NAAnnotation *)annotation animated:(BOOL)animate {
     
-    //隐藏以前的点
-    //TODO:需要优化效率
-//    [self hideCallOut];
-    for(NAPinAnnotationView *annotationView in self.annotationViews){
-        [annotationView removeFromSuperview];
-        [self removeObserver:annotationView forKeyPath:@"contentSize"];
-        [self.annotationViews removeObject:annotationView];
-    }
+    NAAnnotation *currentAnnotation = [[self.annotationViews firstObject] annotation];
     
-    NAPinAnnotationView *annontationView = [[NAPinAnnotationView alloc] initWithAnnotation:annotation onMapView:self];
+    if (!CGPointEqualToPoint(currentAnnotation.point, annotation.point)) {
     
-    [annontationView addTarget:self action:@selector(showCallOut:) forControlEvents:UIControlEventTouchDown];
-    [self addObserver:annontationView forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
-    
-    //TODO: 添加渐变动画
-    if(animate){
-//        annontationView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0.0f, -annontationView.center.y);
-        
-        annontationView.alpha = 0.0f;
-        
-        [UIView animateWithDuration:NA_PIN_ANIMATION_DURATION
-                              delay:0
-                            options:UIViewAnimationOptionCurveEaseInOut
-                         animations:^{
-                             annontationView.alpha = 1.0f;
-                         } completion:nil];
-        
-    }
-    
-    [self addSubview:annontationView];
-    
-    if(animate){
-        annontationView.animating = YES;
-        [UIView animateWithDuration:NA_PIN_ANIMATION_DURATION animations:^{
-            annontationView.transform = CGAffineTransformIdentity;
+        //隐藏以前的点
+        //TODO:需要优化效率
+    //    [self hideCallOut];
+        for(CurrentLocationView *annotationView in self.annotationViews){
+            [annotationView removeFromSuperview];
+            [self removeObserver:annotationView forKeyPath:@"contentSize"];
+            [self.annotationViews removeObject:annotationView];
         }
-                         completion:^ (BOOL finished) {
-                             annontationView.animating = NO;
-                         }];
+        
+        CurrentLocationView *annontationView = [[CurrentLocationView alloc] initWithAnnotation:annotation onMapView:self];
+        
+        [annontationView addTarget:self action:@selector(showCallOut:) forControlEvents:UIControlEventTouchDown];
+        [self addObserver:annontationView forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
+        
+        //TODO: 添加渐变动画
+        if(animate){
+    //        annontationView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0.0f, -annontationView.center.y);
+            
+            annontationView.alpha = 0.0f;
+            
+            [UIView animateWithDuration:NA_PIN_ANIMATION_DURATION
+                                  delay:0
+                                options:UIViewAnimationOptionCurveEaseInOut
+                             animations:^{
+                                 annontationView.alpha = 1.0f;
+                             } completion:nil];
+            
+        }
+        
+        [self addSubview:annontationView];
+        
+        if(animate){
+            annontationView.animating = YES;
+            [UIView animateWithDuration:NA_PIN_ANIMATION_DURATION animations:^{
+                annontationView.transform = CGAffineTransformIdentity;
+            }
+                             completion:^ (BOOL finished) {
+                                 annontationView.animating = NO;
+                             }];
+        }
+        
+        if(!self.annotationViews){
+            self.annotationViews = [[NSMutableArray alloc] init];
+        }
+        
+        [self.annotationViews addObject:annontationView];
+        [self bringSubviewToFront:self.calloutView];
     }
-    
-    if(!self.annotationViews){
-        self.annotationViews = [[NSMutableArray alloc] init];
-    }
-    
-    [self.annotationViews addObject:annontationView];
-    [self bringSubviewToFront:self.calloutView];
 }
 
 - (void)addAnnotation:(NAAnnotation *)annotation animated:(BOOL)animate {
@@ -197,7 +204,9 @@
 }
 
 - (IBAction)showCallOut:(id)sender {
-    if(![sender isKindOfClass:[NAPinAnnotationView class]]) return;
+    if(![sender isKindOfClass:[NAPinAnnotationView class]] && ![sender isKindOfClass:[CurrentLocationView class]]){
+        return;
+    }
     NAPinAnnotationView *annontationView = (NAPinAnnotationView *)sender;
     [self _showCallOutForAnnontationView:annontationView animated:YES];
 }

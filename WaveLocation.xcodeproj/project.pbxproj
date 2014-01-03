@@ -71,6 +71,12 @@
 		ADD7C95018719C5700400EC8 /* pinRedFloating.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93818719C5700400EC8 /* pinRedFloating.png */; };
 		ADD7C95118719C5700400EC8 /* pinRedFloating@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7C93918719C5700400EC8 /* pinRedFloating@2x.png */; };
 		ADD7C95418719CAA00400EC8 /* MapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADD7C95318719CAA00400EC8 /* MapViewController.mm */; };
+		C1C47901187561C500D0C491 /* CurrentLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C47900187561C500D0C491 /* CurrentLocationView.m */; };
+		C1C479061876610A00D0C491 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C1C479021876610A00D0C491 /* arrow.png */; };
+		C1C479071876610A00D0C491 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1C479031876610A00D0C491 /* arrow@2x.png */; };
+		C1C479081876610A00D0C491 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = C1C479041876610A00D0C491 /* ball.png */; };
+		C1C479091876610A00D0C491 /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1C479051876610A00D0C491 /* ball@2x.png */; };
+		C1C4790B1876909500D0C491 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C4790A1876909500D0C491 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +181,13 @@
 		ADD7C93918719C5700400EC8 /* pinRedFloating@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinRedFloating@2x.png"; sourceTree = "<group>"; };
 		ADD7C95218719CAA00400EC8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		ADD7C95318719CAA00400EC8 /* MapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapViewController.mm; sourceTree = "<group>"; };
+		C1C478FF187561C500D0C491 /* CurrentLocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentLocationView.h; sourceTree = "<group>"; };
+		C1C47900187561C500D0C491 /* CurrentLocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentLocationView.m; sourceTree = "<group>"; };
+		C1C479021876610A00D0C491 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		C1C479031876610A00D0C491 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		C1C479041876610A00D0C491 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		C1C479051876610A00D0C491 /* ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@2x.png"; sourceTree = "<group>"; };
+		C1C4790A1876909500D0C491 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C4790B1876909500D0C491 /* CoreLocation.framework in Frameworks */,
 				AD77432E1871A091003A13C4 /* AVFoundation.framework in Frameworks */,
 				AD77432C1871A089003A13C4 /* AudioToolbox.framework in Frameworks */,
 				AD77432A1871A080003A13C4 /* QuartzCore.framework in Frameworks */,
@@ -212,6 +226,10 @@
 		AD77431C18719E54003A13C4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C1C479021876610A00D0C491 /* arrow.png */,
+				C1C479031876610A00D0C491 /* arrow@2x.png */,
+				C1C479041876610A00D0C491 /* ball.png */,
+				C1C479051876610A00D0C491 /* ball@2x.png */,
 				AD7743551871A16F003A13C4 /* success_1.wav */,
 				AD7743561871A16F003A13C4 /* top_gb.png */,
 				AD7743571871A16F003A13C4 /* top_gb@2x.png */,
@@ -317,6 +335,7 @@
 		ADD7C8ED18719A3100400EC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1C4790A1876909500D0C491 /* CoreLocation.framework */,
 				AD77432D1871A091003A13C4 /* AVFoundation.framework */,
 				AD77432B1871A089003A13C4 /* AudioToolbox.framework */,
 				AD7743291871A080003A13C4 /* QuartzCore.framework */,
@@ -400,6 +419,8 @@
 				ADD7C92918719C5700400EC8 /* NACallOutView.m */,
 				ADD7C92A18719C5700400EC8 /* NAMapView.h */,
 				ADD7C92B18719C5700400EC8 /* NAMapView.m */,
+				C1C478FF187561C500D0C491 /* CurrentLocationView.h */,
+				C1C47900187561C500D0C491 /* CurrentLocationView.m */,
 				ADD7C92C18719C5700400EC8 /* NAPinAnnotationView.h */,
 				ADD7C92D18719C5700400EC8 /* NAPinAnnotationView.m */,
 				ADD7C92E18719C5700400EC8 /* pinGreen.png */,
@@ -500,6 +521,7 @@
 				ADD7C94618719C5700400EC8 /* pinGreen.png in Resources */,
 				ADD7C93B18719C5700400EC8 /* callout_anchor@2x.png in Resources */,
 				ADD7C94018719C5700400EC8 /* callout_right.png in Resources */,
+				C1C479091876610A00D0C491 /* ball@2x.png in Resources */,
 				ADD7C93E18719C5700400EC8 /* callout_left.png in Resources */,
 				ADD7C93C18719C5700400EC8 /* callout_bg.png in Resources */,
 				AD77431E18719E54003A13C4 /* 11.png in Resources */,
@@ -515,8 +537,11 @@
 				ADD7C94718719C5700400EC8 /* pinGreen@2x.png in Resources */,
 				ADD7C94818719C5700400EC8 /* pinGreenFloating.png in Resources */,
 				ADD7C94B18719C5700400EC8 /* pinPurple@2x.png in Resources */,
+				C1C479061876610A00D0C491 /* arrow.png in Resources */,
 				ADD7C93A18719C5700400EC8 /* callout_anchor.png in Resources */,
+				C1C479071876610A00D0C491 /* arrow@2x.png in Resources */,
 				ADD7C94C18719C5700400EC8 /* pinPurpleFloating.png in Resources */,
+				C1C479081876610A00D0C491 /* ball.png in Resources */,
 				ADD7C93F18719C5700400EC8 /* callout_left@2x.png in Resources */,
 				ADD7C90118719A3100400EC8 /* Images.xcassets in Resources */,
 			);
@@ -552,6 +577,7 @@
 				ADD7C8FB18719A3100400EC8 /* main.m in Sources */,
 				AD77436918726DBB003A13C4 /* GHNeighbors.m in Sources */,
 				ADD7C95418719CAA00400EC8 /* MapViewController.mm in Sources */,
+				C1C47901187561C500D0C491 /* CurrentLocationView.m in Sources */,
 				AD77436618726DBB003A13C4 /* cgeohash.m in Sources */,
 				AD7743531871A165003A13C4 /* FFTBufferManager.cpp in Sources */,
 				AD7743421871A0DB003A13C4 /* bb_freq_util.cpp in Sources */,

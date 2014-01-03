@@ -6,49 +6,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WaveLocation/NAMapKit/NAMapView.m"
-            timestampString = "410171604.932432"
+            filePath = "WaveLocation/NAMapKit/CurrentLocationView.m"
+            timestampString = "410427416.425089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "-addCurrentLocateAnnotation:animated:"
+            startingLineNumber = "347"
+            endingLineNumber = "347"
+            landmarkName = "-drawRect:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WaveLocation/NAMapKit/NAMapView.m"
-            timestampString = "410171723.951301"
+            filePath = "WaveLocation/NAMapKit/CurrentLocationView.m"
+            timestampString = "410427416.425089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "-addCurrentLocateAnnotation:animated:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WaveLocation/NAMapKit/NAMapView.m"
-            timestampString = "410171783.818707"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "-addCurrentLocateAnnotation:animated:"
-            landmarkType = "5">
+            startingLineNumber = "337"
+            endingLineNumber = "337"
+            landmarkName = "rotate()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
